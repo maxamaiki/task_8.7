@@ -131,7 +131,7 @@ document.getElementById('btnPlay').addEventListener('click', function () {      
                 answerNumber = Math.floor((minValue + maxValue) / 2);
                 orderNumber++;
                 orderNumberField.innerText = orderNumber;
-                const phraseRandom = Math.round(Math.random() * 4); // Генерируется случайное число от 0 до 3.
+                const phraseRandom = Math.round(Math.random() * 3); // Генерируется случайное число от 0 до 3.
                 switch (phraseRandom) {
                     case 0:
                         answerPhrase = `Скорее всего, это число `
