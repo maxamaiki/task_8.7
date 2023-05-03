@@ -131,21 +131,21 @@ document.getElementById('btnPlay').addEventListener('click', function () {      
                 answerNumber = Math.floor((minValue + maxValue) / 2);
                 orderNumber++;
                 orderNumberField.innerText = orderNumber;
-                const phraseRandom = Math.round(Math.random() * 4); // Генерируется случайное число от 0 до 4.
+                const phraseRandom = Math.round(Math.random() * 4); // Генерируется случайное число от 0 до 3.
                 switch (phraseRandom) {
-                    case 1:
+                    case 0:
                         answerPhrase = `Скорее всего, это число `
                         break;
 
-                    case 2:
+                    case 1:
                         answerPhrase = `Вероятно, `
                         break;
 
-                    case 3:
+                    case 2:
                         answerPhrase = `Это число `
                         break;
 
-                    case 4:
+                    case 3:
                         answerPhrase = `Похоже, что это число `
                         break;
                 }
